@@ -1,0 +1,17 @@
+{
+	"name": "mavnews-api",
+	"version": "0.0.1",
+	"description": "An API for MavNews",
+	"main": "bin/server.js",
+	"scripts": {
+		"start": "node bin/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Jason Norwood-Young",
+	"license": "MIT",
+	"dependencies": {
+		"config": "^1.28.1",
+		"jexpress": "github:j-norwood-young/jexpress-2",
+		"mongoose": "^4.13.7"
+	}
+}
