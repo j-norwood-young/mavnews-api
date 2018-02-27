@@ -18,6 +18,8 @@ var ArticleSchema = new Schema({
 	date_created: { type: Date, default: Date.now }
 });
 
+ArticleSchema.index( { "$**": "text" } );
+
 ArticleSchema.set("_perms", {
 	admin: "crud",
 	owner: "crud",
