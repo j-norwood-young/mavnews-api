@@ -10,12 +10,13 @@ var ArticleSchema = new Schema({
 	provider_uid: { type: String, index: true },
 	body: String,
 	byline: [String],
-	provider: String,
+	provider: { type: String, index: true },
 	date: { type: Date, index: true },
 	city: String,
 	country: String,
 	keywords: [String],
-	date_created: { type: Date, default: Date.now }
+	date_created: { type: Date, default: Date.now, index: true },
+	date_updated: { type: Date, default: Date.now, index: true },
 });
 
 ArticleSchema.index( { "$**": "text" } );
