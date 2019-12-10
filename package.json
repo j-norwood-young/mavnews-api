@@ -11,7 +11,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"config": "^1.28.1",
-		"jexpress": "github:j-norwood-young/jexpress-2",
-		"mongoose": "^4.13.7"
+		"jxp": "^1.2.8",
+		"mongoose": "^5.8.0"
 	}
 }
